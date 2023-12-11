@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Login</title>
+		<link rel="stylesheet" href="/css/style.css" />
+	</head>
+	<body>
+		<div class="wrapper login">
+			<form class="form-login">
+				<h1>Login</h1>
+				<div class="input-box">
+					<input type="email" name="email" placeholder="email" required />
+					<i class="bx bxs-user"></i>
+				</div>
+				<div class="input-box">
+					<input
+						type="password"
+						name="password"
+						placeholder="password"
+						required
+					/>
+					<i class="bx bxs-lock-alt"></i>
+				</div>
+				<button type="submit" class="btn">Login</button>
+				<div class="register-link">
+					<p>
+						Dont't have an account?
+						<a href="#sign-up" class="register-link-a"> Register </a>
+					</p>
+				</div>
+			</form>
+		</div>
+		<div class="wrapper sign-up">
+			<form class="form-sign-up">
+				<h1>Sign Up</h1>
+				<div class="input-box">
+					<input
+						type="text"
+						name="username"
+						placeholder="Username"
+						minlength="5"
+						required
+					/>
+					<i class="bx bxs-user"></i>
+				</div>
+				<div class="input-box">
+					<input type="email" name="email" placeholder="email" required />
+					<i class="bx bxs-lock-alt"></i>
+				</div>
+				<div class="input-box">
+					<input
+						type="password"
+						name="password"
+						placeholder="password"
+						minlength="5"
+						required
+					/>
+					<i class="bx bxs-lock-alt"></i>
+				</div>
+				<button type="submit" class="btn">Sing up</button>
+				<div class="register-link">
+					<a href="#" class="register-link-back"> Login </a>
+				</div>
+			</form>
+		</div>
+	</body>
+	<script type="module" src="/js/auth.js"></script>
+	<script type="module" src="/js/api.js"></script>
+</html>

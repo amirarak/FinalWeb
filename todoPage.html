@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="/css/style.css" />
+		<link rel="stylesheet" href="/css/todo.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="wrapper">
+				<button class="btn logout">Logout</button>
+				<form class="form-task">
+					<div class="input-box">
+						<input type="text" name="text" placeholder="text" required />
+						<i class="bx bxs-lock-alt"></i>
+					</div>
+					<button type="submit" class="btn">add task</button>
+				</form>
+				<div class="custom-select">
+					<select class="select">
+						<option value="all">all tasks</option>
+						<option value="done">completed tasks</option>
+						<option value="active">active tasks</option>
+					</select>
+				</div>
+			</div>
+			<div class="contaner-cars"></div>
+		</div>
+	</body>
+	<script src="/js/todo.js" type="module"></script>
+	<script src="/js/api.js" type="module"></script>
+</html>
